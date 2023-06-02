@@ -12,3 +12,4 @@ RUN ["upx", "/deep-sleep"]
 FROM scratch
 COPY --from=compress /deep-sleep /
 CMD ["/deep-sleep"]
+HEALTHCHECK CMD ["/deep-sleep"]
